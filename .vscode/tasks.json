@@ -39,6 +39,23 @@
 						"focus": true,
 						"panel": "shared"
 					}
+				},
+				{
+					"label": "index code",
+					"type": "shell",
+					"command": "python3",
+					"args": [
+						"${workspaceFolder}/tools/index_c.py",
+						"${workspaceFolder}",
+						"${workspaceFolder}/.vscode/code-index.json"
+					],
+                    "problemMatcher": [],
+                    "presentation": {
+                        "echo": true,
+                        "reveal": "always",
+                        "focus": false,
+                        "panel": "shared"
+                    }
 				}
 	]
 }
