@@ -10,6 +10,14 @@ Small C program for experimenting with scanf/sscanf parsing and basic I/O.
 - Build task: "build cpp102"
 - Run task: "run cpp102"
 
+## Index the code (call graph)
+- Task: "index code" — regenerates a lightweight call graph into `.vscode/code-index.json`.
+- CLI alternative:
+	- ```bash
+		python3 tools/index_c.py . .vscode/code-index.json
+		```
+	- The JSON file is ignored by Git.
+
 ## Build from terminal (macOS)
 ```bash
 clang -g cpp102.c -o cpp102
