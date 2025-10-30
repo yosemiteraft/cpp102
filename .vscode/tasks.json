@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build cpp102",
+			"type": "shell",
+			"command": "clang++",
+			"args": [
+				"-g",
+				"${workspaceFolder}/cpp102.c",
+				"-o",
+				"${workspaceFolder}/cpp102"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": ["$gcc"],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			}
+		}
+				,
+				{
+					"label": "run cpp102",
+					"type": "shell",
+					"command": "bash",
+					"args": [
+						"-lc",
+						"${workspaceFolder}/cpp102; echo; read -n1 -s -p \"Press any key to close...\""
+					],
+					"dependsOn": "build cpp102",
+					"presentation": {
+						"echo": true,
+						"reveal": "always",
+						"focus": true,
+						"panel": "shared"
+					}
+				}
+	]
+}

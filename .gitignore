@@ -1,0 +1,11 @@
+# Build artifacts
+cpp102
+cpp102.dSYM/
+
+# OS/editor noise
+.DS_Store
+*.swp
+.vscode/ipch/
+
+# Logs
+*.log

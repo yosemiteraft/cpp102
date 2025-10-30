@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C++ (GDB/LLDB MI): Launch cpp102 (cppdbg, integratedTerminal)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/cpp102",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "MIMode": "lldb",
+      "miDebuggerPath": "",
+   
+
+      "preLaunchTask": "build cpp102"
+    }
+  ]
+}
